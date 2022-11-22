@@ -22,17 +22,16 @@ package1.module2.foo()
 package2.module1.foo()
 
 # %%
-# Import modules from nopackage.
-# According to the documentation,
-# this is not a valid package
+# Import modules from my_package_namespace.
+# This is a package namespace that contains several packages.
 
-import nopackage.module1
-import nopackage.module2
+import my_package_namespace.module1
+import my_package_namespace.module2
 
 # %%
-# Call the foo() functions from the invalid package.
-nopackage.module1.foo()
-nopackage.module2.foo()
+# Call the foo() functions from the package namespace.
+my_package_namespace.module1.foo()
+my_package_namespace.module2.foo()
 # %%
 # Import modules from valid sub packages.
 from package1.subpackage import submodule1
@@ -42,21 +41,13 @@ from package1.subpackage import submodule1
 submodule1.foo()
 
 # %%
-# Import modules from invalid sub packages.
-import nopackage.subpackage.submodule1
-
-# %%
-# ... use them
-nopackage.subpackage.submodule1.foo()
-
-# %%
 # Use a function that imports something
 # from another module in its package.
 package2.module2.bar()
 
 # %%
-# Same with the invalid package.
-nopackage.module2.bar()
+# Same with the package namespace.
+my_package_namespace.module2.bar()
 
 # %%
 # Import a package that has a non empty __init__.py
