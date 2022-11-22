@@ -2,6 +2,11 @@
 # in the packages that are defined in this repository.
 # This demonstrates how to define and use python packages.
 
+# Remark: This file contains code cells that are separated with '# %%'.
+# If you open this file in Visual Studio Code and have the package 
+# ipykernel package installed ('pip install ipykernel'), you can
+# execute these cells one by one similar to a jupyter notebook.
+
 # %%
 # Import functions/modules from packages
 # package1 and package2
@@ -10,7 +15,8 @@ import package1.module2
 import package2.module1
 import package2.module2
 
-# %% Call the foo() functions from the imported modules.
+# %%
+# Call the foo() functions from the imported modules.
 foo11()
 package1.module2.foo()
 package2.module1.foo()
