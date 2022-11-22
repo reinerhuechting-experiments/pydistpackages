@@ -1,3 +1,7 @@
+# This file contains imports and calls to several functions
+# in the packages that are defined in this repository.
+# This demonstrates how to define and use python packages.
+
 # %%
 # Import functions/modules from packages
 # package1 and package2
