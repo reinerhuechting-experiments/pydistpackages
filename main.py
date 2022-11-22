@@ -53,3 +53,17 @@ package2.module2.bar()
 nopackage.module2.bar()
 
 # %%
+# Import a package that has a non empty __init__.py
+import packagenonemptyinit
+
+# %%
+# Call functions from it.
+packagenonemptyinit.foo1()
+packagenonemptyinit.foo2()
+
+# %%
+# Use the function that has not been exported in __init__py.
+import packagenonemptyinit.module2
+packagenonemptyinit.module2.bar()
+
+# %%
