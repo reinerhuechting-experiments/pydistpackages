@@ -16,3 +16,10 @@ import package2.module1
 # %%
 package2.module1.foo()
 # %%
+
+#%%
+import nopackage.module1
+
+#%%
+nopackage.module1.foo()
+# %%
