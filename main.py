@@ -33,3 +33,13 @@ import nopackage.subpackage.submodule1
 # %%
 nopackage.subpackage.submodule1.foo()
 # %%
+import package2.module2
+#%%
+package2.module2.bar()
+# %%
+import nopackage.module2
+
+# %%
+nopackage.module2.bar()
+
+# %%
