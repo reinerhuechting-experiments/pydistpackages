@@ -27,4 +27,9 @@ from package1.subpackage import submodule1
 
 #%%
 submodule1.foo()
+
+# %%
+import nopackage.subpackage.submodule1
+# %%
+nopackage.subpackage.submodule1.foo()
 # %%
