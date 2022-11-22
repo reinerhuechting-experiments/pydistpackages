@@ -22,4 +22,9 @@ import nopackage.module1
 
 #%%
 nopackage.module1.foo()
+#%%
+from package1.subpackage import submodule1
+
+#%%
+submodule1.foo()
 # %%
